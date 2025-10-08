@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace Pras.Models
 {
-    public class Check
+    public class Invoice
     {
         public int Id { get; set; }
         public int BaseId { get; set; }
-        public int UserId { get; set; }
-        public DateTime CheckTime { get; set; }
-        public string PaymentType {  get; set; }
-        public string Number { get; set; }
+        public DateTime InvoiceDate { get; set; }
+        public string SupplierName { get; set; }
+        public string DocumentNumber { get; set; }
         public double TotalAmount { get; set; }
 
-        public User User { get; set; }
         public Base Base { get; set; }
-        public List<CheckProducts> CheckProducts { get; set; } = new();
     }
 }

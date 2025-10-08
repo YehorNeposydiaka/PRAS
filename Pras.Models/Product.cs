@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pras.Models
 {
-    internal class Product
+    public class Product
     {
         public int Id { get; set; }
         public int Code {  get; set; }
@@ -18,5 +18,6 @@ namespace Pras.Models
         public bool Status {  get; set; }
 
         public Base Base { get; set; }
+        public List<CheckProducts> CheckProducts { get; set; } = new();
     }
 }

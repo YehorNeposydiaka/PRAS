@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Pras.Models
 {
-    internal class Base
+    public class Base
     {
         public int Id { get; set; }
         public string Email { get; set; }
@@ -16,6 +16,8 @@ namespace Pras.Models
         public DateTime CreatedAt { get; set; }
         public int Status { get; set; }
 
-        public List<Product> Products { get; set; } = new();
+        public List<Product> Products { get; set; } = new List<Product>();
+        public List<Check> Checks { get; set; } = new List<Check>();
+        public List<Invoice> Invoices { get; set; } = new List<Invoice>();
     }
 }

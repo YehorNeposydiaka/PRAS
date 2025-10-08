@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Pras.Models
 {
-    internal class CheckProducts
+    public class CheckProducts
     {
+        public int Id { get; set; }
+        public int CheckId { get; set; }
+        public int ProductId { get; set; }
+        public double Quantity { get; set; }
+        public double PriceAtSale { get; set; }
+
+        public Check Check { get; set; }
+        public Product Product { get; set; }
     }
 }
