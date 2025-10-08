@@ -15,5 +15,7 @@ namespace Pras.Models
         public string Password { get; set; }
         public DateTime CreatedAt { get; set; }
         public int Status { get; set; }
+
+        public List<Product> Products { get; set; } = new();
     }
 }
