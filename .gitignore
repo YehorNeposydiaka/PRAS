@@ -1,0 +1,24 @@
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+
+# Packages
+[Pp]ackages/
+*.nupkg
+
+# Other
+*.tmp
+*.cache
+*.db
+*.db-shm
+*.db-wal
+*.vscode/
